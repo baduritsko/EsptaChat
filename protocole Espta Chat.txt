@@ -1,0 +1,15 @@
+Protocole ESPTA CHAT
+
+Pour récupérer l'adresse IP :
+socket.gethostbyname(socket.gethostname())
+
+Port 27900
+
+Caractère des commandes : !
+Au moins deux commandes :
+- !connect 192.168.11.100
+- !stop (réservée à l'interface de saisie pour arrêter le serveur)
+
+Lorsqu'un nouveau noeud se connecte :
+- le noeud qui reçoit sa connexion doit envoyer au nouveau noeud la liste des noeuds déjà existant
+- le nouveau noeud doit informer les noeuds de sa présence
